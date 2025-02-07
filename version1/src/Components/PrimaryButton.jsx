@@ -26,7 +26,7 @@ export function PrimaryButton({ButtonText, onClick}){
 export function SecondaryButton({ButtonText, onClick}){
   return(
     <>
-    <Button variant="outlined" className="flex items-center gap-3 rounded-full" onClick={onClick}>
+    <Button variant="outlined" className="flex items-center gap-3 bg-white rounded-full" onClick={onClick}>
         {ButtonText}
         <svg
           xmlns="http://www.w3.org/2000/svg"

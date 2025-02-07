@@ -17,6 +17,7 @@ const SocialIcons = () => {
         <a className="social-button instagram" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-instagram"></i>
         </a>
+        
       </div>
     </div>
   );

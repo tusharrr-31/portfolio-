@@ -31,9 +31,31 @@ export function Clients(){
             <div class="brandLogo">
                 <img src={Client6} alt="" />
             </div>
-            <div class="brandLogo">
+            {/* <div class="brandLogo">
                 <img src={Client7} alt="" />
+            </div> */}
+            <div class="brandLogo">
+                <img src={Client1} alt="" />
             </div>
+            <div class="brandLogo">
+                <img src={Client2} alt="" />
+            </div>
+            <div class="brandLogo">
+                <img src={Client3} alt="" />
+            </div>
+            <div class="brandLogo">
+                <img src={Client4} alt="" />
+            </div>
+            <div class="brandLogo">
+                <img src={Client5} alt="" />
+            </div>
+            <div class="brandLogo">
+                <img src={Client6} alt="" />
+            </div>
+            {/* <div class="brandLogo">
+                <img src={Client7} alt="" />
+            </div> */}
+            
             
         </div>
     </div>

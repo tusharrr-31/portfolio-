@@ -8,7 +8,7 @@ import { PrimaryButton } from "./PrimaryButton";
 
 function About() {
   return (
-    <div className="container mx-auto px-6 py-10">
+    <div className="container py-10">
       <div className="flex flex-col md:flex-row-reverse justify-between items-end md:items-end ">
         <h2 className="text-4xl md:text-5xl font-bold text-right leading-tight font-primary">
           About <br /> <span className="text-primary">Who I Am?</span>
@@ -73,7 +73,7 @@ function About() {
                   Bachelor of Technology in Computer Science and Information
                   Technology
                 </p>
-                <a href="#" className="text-indigo-600 hover:underline">
+                <a href="#" className="text-indigo-600 ">
                   KIET Group of Institutions, Ghaziabad
                 </a>
               </div>
@@ -90,7 +90,7 @@ function About() {
               </div>
               <div className="ml-4">
                 <p className="font-medium text-gray-900">Intermediate</p>
-                <a href="#" className="text-indigo-600 hover:underline">
+                <a href="#" className="text-indigo-600">
                   New St. Stephen’s Senior Secondary School, Agra
                 </a>
               </div>

@@ -3,7 +3,7 @@ export function Experience({Company="Rablo Learning Pvt. Lmt.", Date="July 2024 
     return (
         <>
         
-        <div className="flex justify-between items-center border-b pb-3">
+        <div  className="flex justify-between items-center border-b pb-3 rvv ">
       {/* Left Side */}
       <div className="text-left">
         <div className="text-primary font-medium text-4xl font-primary">
