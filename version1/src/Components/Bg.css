@@ -1,0 +1,93 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.responsibility-section {
+  position: relative;
+  overflow: hidden;
+  background-color: #1e1e2e;
+  padding: 50px 20px;
+}
+
+/* Animated Background Gradient */
+.animat-bg {
+  --size: 100%;
+  --speed: 80s;
+  --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+  padding-left: 10%;
+  width: var(--size);
+  height: var(--size);
+  filter: blur(50px);
+  background-image: linear-gradient(135deg, #6a50ff, #8e77ff, #b3a6ff, #d6c4ff);
+  animation: rotate var(--speed) var(--easing) alternate infinite;
+  border-radius: 50%;
+  opacity: 0.35;
+  position: absolute;
+  top: -15vw;
+  left: -50vw;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+/* Lined Background on the Right */
+.responsibility-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%; /* Adjust width as needed */
+  height: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px),
+                    linear-gradient(to right, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
+  background-size: 20px 20px; /* Adjust grid spacing */
+  opacity: 0.2;
+  z-index: 0;
+}
+
+
+/* Ensure text appears above */
+.responsibility-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+}
+
+/* Responsive Fixes */
+@media (max-width: 1024px) {
+  .animat-bg {
+    width: 150%;
+    height: 150%;
+  }
+  .responsibility-section::after {
+    width: 60%;
+    background-size: 100% 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .animat-bg {
+    width: 200%;
+    height: 200%;
+  }
+  .responsibility-section::after {
+    width: 70%;
+    background-size: 100% 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .animat-bg {
+    width: 250%;
+    height: 250%;
+  }
+  .responsibility-section::after {
+    width: 100%;
+    background-size: 100% 14px;
+  }
+}

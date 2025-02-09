@@ -19,9 +19,9 @@ export function Experience({Company="Rablo Learning Pvt. Lmt.", Date="July 2024 
       </div>
 
       {/* Remote Badge */}
-      <div className="bg-black text-white text-sm px-4 py-2 rounded-full flex items-center font-secondary">
+      {/* <div className="bg-black text-white text-sm px-4 py-2 rounded-full flex items-center font-secondary hidden ">
         <span className="mr-1">•</span> {JobLoc}
-      </div>
+      </div> */}
     </div>
         </>
     )

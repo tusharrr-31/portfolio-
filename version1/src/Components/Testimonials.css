@@ -1,0 +1,154 @@
+
+
+:root {
+  --dark-blue: hsl(240, 38%, 20%);
+  --grayish-blue: hsl(240, 18%, 77%);
+  --background: #FFFFFF;
+}
+
+
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Full height */
+    
+  }
+.slider {
+  position: relative;
+  max-width: 800px;
+  text-align: center;
+  
+}
+
+.buttons {
+  z-index: 1;
+  right: 50%;
+  top: 261px;
+  width: 80px;
+  height: 40px;
+  position: absolute;
+  border-radius: 50px;
+  transform: translateX(50%);
+  background-color: var(--background);
+  display: flex;
+  justify-content: space-between;
+}
+
+.previous, .next {
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.previous {
+  background-image: url('https://alcs-slider.netlify.app/images/icon-prev.svg');
+}
+
+.next {
+  background-image: url('https://alcs-slider.netlify.app/images/icon-next.svg');
+}
+
+
+.previous:hover, .next:hover {
+  transform: scale(1.25);
+}
+
+.slide {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.testimonial {
+  padding: 32px 51px;
+  background-size: 60px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-image: url(https://alcs-slider.netlify.app/images/pattern-quotes.svg);
+}
+
+.testimonial blockquote {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 36px;
+}
+
+.testimonial .author {
+  
+  font-weight: 700;
+}
+
+.testimonial .author span {
+  display: block;
+  color: var(--grayish-blue);
+  font-weight: 500;
+}
+
+.slider-img {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  margin-bottom: 40px;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(https://alcs-slider.netlify.app/images/pattern-bg.svg);
+}
+
+
+.slider-img img {
+  width: 240px;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0px 16px 40px 0px rgba(135, 105, 210, 0.4);
+}
+
+@media screen and (min-width: 900px) {
+  .slider {
+    max-width: 1054px;
+    padding: 64px 64px 64px 0;
+  }
+
+  .buttons {
+    right: 43%;
+    top: 500px;
+  }
+
+  .slide {
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+  }
+
+  .testimonial {
+    padding: 32px 0 0 0;
+    background-size: 80px;
+    background-position: 19% -7%;
+  }
+
+  .testimonial blockquote {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .testimonial .author span {
+    display: inline;
+  }
+
+  .slider-img {
+    padding: 55px;
+  }
+
+  .slider-img img {
+    width: 400px;
+  }
+}

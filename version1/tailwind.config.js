@@ -32,6 +32,15 @@ module.exports = withMT( {
         secondary: '#121212', // Gray shade
         PrimaryBorder: '#1F1F1F',
       },
+      animation: {
+        "move-left": "move-left 30s linear infinite",
+      },
+      keyframes: {
+        "move-left": {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+      },
     },
   },
   plugins: [],
